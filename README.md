@@ -1,37 +1,37 @@
 # Archforge
 
-CLI para criacao automatizada de aplicacoes backend baseada em decisoes tecnicas.
+CLI para criação automatizada de aplicações backend baseada em decisões técnicas.
 
 Idioma: [Português](README.md) | [English](README.en.md)
-Documentacao: [PT-BR](docs/pt-BR/index.md) | [EN](docs/en/index.md)
+Documentação: [PT-BR](docs/pt-BR/index.md) | [EN](docs/en/index.md)
 
 ## Por que existe
 
-Surgiu de uma insatisfacao: toda vez que um projeto novo comecava, era preciso
+Surgiu de uma insatisfação: toda vez que um projeto novo começava, era preciso
 refazer o setup inteiro. Isso gastava tempo e energia que deveriam ir para o que
-realmente importa. O Archforge automatiza essa etapa para voce focar no produto
-e nas regras de negocio.
+realmente importa. O Archforge automatiza essa etapa para você focar no produto
+e nas regras de negócio.
 
 Geradores comuns tratam arquitetura como efeito colateral do framework. O
-Archforge nasceu para fazer o contrario: transformar decisoes explicitas
+Archforge nasceu para fazer o contrário: transformar decisões explícitas
 (backend, arquitetura, banco, ORM, Docker e testes) em um projeto coerente desde
 o primeiro commit.
 
-Arquitetura nao e so organizacao de pastas. Ela envolve limites, dependencias e
-regras de negocio. O Archforge acelera o ponto de partida, mas voce continua
-responsavel por manter desacoplamento e consistencia do dominio.
+Arquitetura não é só organização de pastas. Ela envolve limites, dependências e
+regras de negócio. O Archforge acelera o ponto de partida, mas você continua
+responsável por manter desacoplamento e consistência do domínio.
 
-Nao usa IA: a geracao e deterministica e baseada em templates e regras.
+Não usa IA: a geração é determinística e baseada em templates e regras.
 
 ## O que entrega hoje (v0.1)
 
 - Express como backend (foco em simplicidade).
-- Clean Architecture como padrao.
+- Clean Architecture como padrão.
 - Postgres + TypeORM, ou nenhum banco.
 - Docker opcional (e Postgres no Docker quando escolhido).
 - Testes opcionais (Vitest ou nenhum).
 
-## Documentacao
+## Documentação
 
 - PT-BR: `docs/pt-BR/index.md`
 - EN: `docs/en/index.md`
@@ -41,16 +41,16 @@ Nao usa IA: a geracao e deterministica e baseada em templates e regras.
 - Node 24 LTS
 - npm
 
-## Instalacao (desenvolvimento local)
+## Instalação (desenvolvimento local)
 
 ```bash
 npm run build
 npm link
 ```
 
-Depois disso, o comando `archforge` fica disponivel globalmente.
+Depois disso, o comando `archforge` fica disponível globalmente.
 
-## Uso rapido
+## Uso rápido
 
 ```bash
 archforge init
@@ -73,6 +73,6 @@ archforge init --save-context
 - `clean-api`: Express + Clean + Postgres + TypeORM + Docker
 - `clean-no-db`: Express + Clean sem banco
 
-## Licenca
+## Licença
 
 MIT
