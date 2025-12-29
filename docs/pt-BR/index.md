@@ -110,6 +110,36 @@ rodar migrations normalmente.
 O Archforge entrega um esqueleto coerente, mas nao garante o desacoplamento
 por si so. Manter limites e regras de negocio e responsabilidade do time.
 
+### Nota detalhada
+
+Arquitetura nao e somente pastas. Ela define:
+
+- limites de dependencia (quem pode conhecer quem)
+- contratos entre camadas
+- onde as regras de negocio vivem
+
+No template Clean, a intencao e:
+
+1) **Dominio** nao conhece infraestrutura.  
+   Entidades, regras e contratos devem existir sem depender de HTTP, banco ou ORM.
+
+2) **Aplicacao** coordena casos de uso.  
+   E onde se orquestram regras, validacoes e chamadas de repositorios (interfaces).
+
+3) **Infraestrutura** e detalhe.  
+   Banco, HTTP, ORM, email, cache, filas. Tudo isso deve implementar contratos
+   definidos acima, nunca o contrario.
+
+4) **Controllers sao finos.**  
+   Eles apenas transformam request em comando e chamam o servico/uso.  
+   Regra de negocio nao deve estar no controller.
+
+5) **Dependencias apontam para dentro.**  
+   Se um modulo de dominio importar algo de infra, a arquitetura ja quebrou.
+
+O Archforge nao aplica essas regras sozinho.  
+Ele facilita o arranque, mas a disciplina e do time.
+
 ## Licenca
 
 MIT

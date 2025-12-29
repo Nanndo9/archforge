@@ -109,6 +109,36 @@ run normally.
 Archforge provides a coherent scaffold, but it does not enforce decoupling
 by itself. Keeping boundaries and domain rules is the team's responsibility.
 
+### Detailed note
+
+Architecture is not just folders. It defines:
+
+- dependency boundaries (who can depend on whom)
+- contracts between layers
+- where business rules live
+
+In the Clean template, the intent is:
+
+1) **Domain** does not know infrastructure.  
+   Entities, rules and contracts should exist without HTTP, database or ORM.
+
+2) **Application** coordinates use cases.  
+   It orchestrates rules, validations, and calls repository interfaces.
+
+3) **Infrastructure** is a detail.  
+   Database, HTTP, ORM, email, cache, queues. All implement contracts defined
+   above, never the other way around.
+
+4) **Controllers are thin.**  
+   They map requests to commands and call the service/use case.  
+   Business rules do not belong in controllers.
+
+5) **Dependencies point inward.**  
+   If a domain module imports infrastructure, the architecture is broken.
+
+Archforge does not enforce these rules automatically.  
+It accelerates the start, but discipline belongs to the team.
+
 ## License
 
 MIT
