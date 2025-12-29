@@ -6,13 +6,21 @@ English version: `README.en.md`
 
 ## Por que existe
 
-Geradores comuns tratam arquitetura como efeito colateral do framework. O Archforge
-nasceu para fazer o contrario: transformar decisoes explicitas (backend, arquitetura,
-banco, ORM, Docker e testes) em um projeto coerente desde o primeiro commit.
+Surgiu de uma insatisfacao: toda vez que um projeto novo comecava, era preciso
+refazer o setup inteiro. Isso gastava tempo e energia que deveriam ir para o que
+realmente importa. O Archforge automatiza essa etapa para voce focar no produto
+e nas regras de negocio.
+
+Geradores comuns tratam arquitetura como efeito colateral do framework. O
+Archforge nasceu para fazer o contrario: transformar decisoes explicitas
+(backend, arquitetura, banco, ORM, Docker e testes) em um projeto coerente desde
+o primeiro commit.
 
 Arquitetura nao e so organizacao de pastas. Ela envolve limites, dependencias e
 regras de negocio. O Archforge acelera o ponto de partida, mas voce continua
 responsavel por manter desacoplamento e consistencia do dominio.
+
+Nao usa IA: a geracao e deterministica e baseada em templates e regras.
 
 ## O que entrega hoje (v0.1)
 
