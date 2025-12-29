@@ -10,6 +10,7 @@
   "files": [
     "dist",
     "assets",
+    "docs",
     "LICENSE",
     "package.json"
   ],
