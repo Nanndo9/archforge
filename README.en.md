@@ -6,6 +6,10 @@ Versao em portugues: `README.md`
 
 ## Why it exists
 
+It came from a dissatisfaction: every new project meant rebuilding the entire
+setup from scratch. That wasted time and energy that should go to what matters.
+Archforge automates this stage so you can focus on product and domain rules.
+
 Most generators treat architecture as a byproduct of the framework. Archforge
 was created to do the opposite: turn explicit decisions (backend, architecture,
 database, ORM, Docker, tests) into a coherent project from the first commit.
@@ -13,6 +17,8 @@ database, ORM, Docker, tests) into a coherent project from the first commit.
 Architecture is not only folder structure. It is about boundaries, dependencies,
 and domain rules. Archforge accelerates the starting point, but you are still
 responsible for keeping the domain decoupled and consistent.
+
+No AI usage: generation is deterministic and template driven.
 
 ## What it delivers today (v0.1)
 
