@@ -2,7 +2,7 @@
 
 CLI para criacao automatizada de aplicacoes backend baseada em decisoes tecnicas.
 
-English version: `README.en.md`
+Idioma: [Português](README.md) | [English](README.en.md)
 
 ## Por que existe
 

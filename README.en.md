@@ -2,7 +2,7 @@
 
 CLI for automated backend creation driven by technical decisions.
 
-Versao em portugues: `README.md`
+Language: [Português](README.md) | [English](README.en.md)
 
 ## Why it exists
 
