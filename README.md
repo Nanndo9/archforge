@@ -3,7 +3,7 @@
 CLI para criação automatizada de aplicações backend baseada em decisões técnicas.
 
 Idioma: [Português](README.md) | [English](README.en.md)
-Documentação: [PT-BR](docs/pt-BR/index.md) | [EN](docs/en/index.md)
+Documentação: [PT-BR](https://github.com/Nanndo9/archforge/blob/main/docs/pt-BR/index.md) | [EN](https://github.com/Nanndo9/archforge/blob/main/docs/en/index.md)
 
 ## Por que existe
 
@@ -40,6 +40,14 @@ Não usa IA: a geração é determinística e baseada em templates e regras.
 
 - Node 24 LTS
 - npm
+
+## Instalação (npm)
+
+```bash
+npm i -g archforgejs
+```
+
+O comando instalado continua sendo `archforge`.
 
 ## Instalação (desenvolvimento local)
 

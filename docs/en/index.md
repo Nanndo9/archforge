@@ -14,6 +14,14 @@ decoupling and domain rules are still the team's responsibility.
 - Node 24 LTS
 - npm
 
+## Install (npm)
+
+```bash
+npm i -g archforgejs
+```
+
+The installed command is still `archforge`.
+
 ## Install (local development)
 
 ```bash

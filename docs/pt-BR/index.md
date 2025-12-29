@@ -15,6 +15,14 @@ o desacoplamento e as regras de negócio continuam sob responsabilidade do time.
 - Node 24 LTS
 - npm
 
+## Instalação (npm)
+
+```bash
+npm i -g archforgejs
+```
+
+O comando instalado continua sendo `archforge`.
+
 ## Instalação (desenvolvimento local)
 
 ```bash
