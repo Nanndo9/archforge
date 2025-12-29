@@ -28,6 +28,11 @@ No AI usage: generation is deterministic and template driven.
 - Optional Docker (and Postgres in Docker when selected).
 - Optional tests (Vitest or none).
 
+## Documentation
+
+- PT-BR: `docs/pt-BR/index.md`
+- EN: `docs/en/index.md`
+
 ## Requirements
 
 - Node 24 LTS
@@ -55,6 +60,7 @@ archforge --help
 archforge presets
 archforge -p list
 archforge -p clean-api
+archforge -p clean-no-db
 archforge init --no-install
 archforge init --save-context
 ```
@@ -63,63 +69,6 @@ archforge init --save-context
 
 - `clean-api`: Express + Clean + Postgres + TypeORM + Docker
 - `clean-no-db`: Express + Clean without database
-
-## Generated projects
-
-### Postgres + TypeORM
-
-Includes a basic `users` CRUD, migrations, and endpoints:
-
-- `GET /health`
-- `GET /users`
-- `GET /users/:id`
-- `POST /users`
-- `PUT /users/:id`
-- `DELETE /users/:id`
-
-Migrations:
-
-```bash
-npm run migration:generate
-npm run migration:run
-```
-
-Docker (with Postgres):
-
-```bash
-docker compose up --build
-```
-
-### No database
-
-Minimal project with healthcheck and no database layer.
-
-## Environment configuration
-
-In the generated project:
-
-```bash
-cp .env.example .env
-```
-
-Main variables:
-
-- `PORT`
-- `DB_HOST`
-- `DB_PORT`
-- `DB_USER`
-- `DB_PASSWORD`
-- `DB_NAME`
-
-If you choose Postgres in Docker, the compose file injects `DB_HOST=postgres`
-only inside the container. On the host, keep `DB_HOST=localhost` so migrations
-run normally.
-
-## Architecture note
-
-Archforge provides a coherent scaffold, but it does not enforce decoupling
-by itself. The baseline is there; enforcing boundaries and domain rules is
-still the team's responsibility.
 
 ## License
 

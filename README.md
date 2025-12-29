@@ -30,6 +30,11 @@ Nao usa IA: a geracao e deterministica e baseada em templates e regras.
 - Docker opcional (e Postgres no Docker quando escolhido).
 - Testes opcionais (Vitest ou nenhum).
 
+## Documentacao
+
+- PT-BR: `docs/pt-BR/index.md`
+- EN: `docs/en/index.md`
+
 ## Requisitos
 
 - Node 24 LTS
@@ -57,6 +62,7 @@ archforge --help
 archforge presets
 archforge -p list
 archforge -p clean-api
+archforge -p clean-no-db
 archforge init --no-install
 archforge init --save-context
 ```
@@ -65,63 +71,6 @@ archforge init --save-context
 
 - `clean-api`: Express + Clean + Postgres + TypeORM + Docker
 - `clean-no-db`: Express + Clean sem banco
-
-## Projetos gerados
-
-### Postgres + TypeORM
-
-Inclui CRUD simples de `users`, migrations e endpoints basicos:
-
-- `GET /health`
-- `GET /users`
-- `GET /users/:id`
-- `POST /users`
-- `PUT /users/:id`
-- `DELETE /users/:id`
-
-Migracoes:
-
-```bash
-npm run migration:generate
-npm run migration:run
-```
-
-Docker (com Postgres):
-
-```bash
-docker compose up --build
-```
-
-### Sem banco
-
-Projeto minimo com healthcheck e sem camada de banco.
-
-## Configuracao de ambiente
-
-No projeto gerado:
-
-```bash
-cp .env.example .env
-```
-
-Variaveis principais:
-
-- `PORT`
-- `DB_HOST`
-- `DB_PORT`
-- `DB_USER`
-- `DB_PASSWORD`
-- `DB_NAME`
-
-Se voce escolher Postgres no Docker, o compose injeta `DB_HOST=postgres`
-apenas dentro do container. No host, `DB_HOST` fica como `localhost` para
-rodar migrations normalmente.
-
-## Nota sobre arquitetura
-
-O Archforge configura um esqueleto coerente, mas nao garante o desacoplamento
-por si so. Mantemos o baseline; a disciplina de limites e regras de negocio
-continua sendo responsabilidade do time.
 
 ## Licenca
 
