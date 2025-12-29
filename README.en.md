@@ -3,6 +3,7 @@
 CLI for automated backend creation driven by technical decisions.
 
 Language: [Português](README.md) | [English](README.en.md)
+Documentation: [PT-BR](docs/pt-BR/index.md) | [EN](docs/en/index.md)
 
 ## Why it exists
 

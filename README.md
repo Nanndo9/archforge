@@ -3,6 +3,7 @@
 CLI para criacao automatizada de aplicacoes backend baseada em decisoes tecnicas.
 
 Idioma: [Português](README.md) | [English](README.en.md)
+Documentacao: [PT-BR](docs/pt-BR/index.md) | [EN](docs/en/index.md)
 
 ## Por que existe
 
