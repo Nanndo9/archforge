@@ -1,0 +1,15 @@
+{
+  "name": "{{projectName}}",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./src/infrastructure/database/data-source.ts migration:generate ./src/infrastructure/database/migrations/auto",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/infrastructure/database/data-source.ts migration:run"
+  }
+}
