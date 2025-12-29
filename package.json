@@ -1,0 +1,13 @@
+{
+  "name": "archforge",
+  "version": "0.0.1",
+  "description": "CLI para criação automatizada de aplicações backend, baseada em decisões técnicas e padrões de projeto.",
+  "type": "commonjs",
+  "bin": {
+    "archforge": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  }
+}
