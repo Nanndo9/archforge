@@ -1,5 +1,5 @@
 {
-  "name": "archforge",
+  "name": "archforgejs",
   "version": "0.0.1",
   "description": "CLI para criação automatizada de aplicações backend, baseada em decisões técnicas e padrões de projeto.",
   "license": "MIT",
