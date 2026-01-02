@@ -1,47 +1,29 @@
 # Archforge
 
-CLI para criação automatizada de aplicações backend baseada em decisões técnicas.
+CLI para criacao automatizada de backends, guiada por decisoes tecnicas e arquiteturais.
 
-Idioma: [Português](README.md) | [English](README.en.md)
-Documentação: [PT-BR](https://github.com/Nanndo9/archforge/blob/main/docs/pt-BR/index.md) | [EN](https://github.com/Nanndo9/archforge/blob/main/docs/en/index.md)
+Idioma: [Portugues](https://github.com/Nanndo9/archforge/blob/main/README.md) | [English](https://github.com/Nanndo9/archforge/blob/main/README.en.md)
+Documentacao: [PT-BR](https://github.com/Nanndo9/archforge/blob/main/docs/pt-BR/index.md) | [EN](https://github.com/Nanndo9/archforge/blob/main/docs/en/index.md)
 
 ## Por que existe
 
-Surgiu de uma insatisfação: toda vez que um projeto novo começava, era preciso
-refazer o setup inteiro. Isso gastava tempo e energia que deveriam ir para o que
-realmente importa. O Archforge automatiza essa etapa para você focar no produto
-e nas regras de negócio.
+Surgiu de uma insatisfacao real: toda vez que um projeto novo comecava, era preciso refazer o setup inteiro. Isso consome tempo e energia que deveriam ir para o produto e para as regras de negocio.
 
-Geradores comuns tratam arquitetura como efeito colateral do framework. O
-Archforge nasceu para fazer o contrário: transformar decisões explícitas
-(backend, arquitetura, banco, ORM, Docker e testes) em um projeto coerente desde
-o primeiro commit.
+O Archforge nasceu para automatizar o inicio do projeto e transformar decisoes explicitas (backend, arquitetura, banco, ORM, Docker, testes) em um projeto coerente desde o primeiro commit.
 
-Arquitetura não é só organização de pastas. Ela envolve limites, dependências e
-regras de negócio. O Archforge acelera o ponto de partida, mas você continua
-responsável por manter desacoplamento e consistência do domínio.
+Arquitetura nao e so organizacao de pastas. E sobre limites, dependencias e dominio. O Archforge acelera o ponto de partida, mas o desacoplamento e a consistencia do dominio continuam sendo responsabilidade do time.
 
-Não usa IA: a geração é determinística e baseada em templates e regras.
+Sem IA: a geracao e deterministica e baseada em templates.
 
 ## O que entrega hoje (v0.1)
 
-- Express como backend (foco em simplicidade).
-- Clean Architecture como padrão.
-- Postgres + TypeORM, ou nenhum banco.
-- Docker opcional (e Postgres no Docker quando escolhido).
+- Express como backend (foco no basico bem feito).
+- Clean Architecture como baseline.
+- Postgres + TypeORM, ou sem banco.
+- Docker opcional (inclui Postgres quando banco).
 - Testes opcionais (Vitest ou nenhum).
 
-## Documentação
-
-- PT-BR: `docs/pt-BR/index.md`
-- EN: `docs/en/index.md`
-
-## Requisitos
-
-- Node 24 LTS
-- npm
-
-## Instalação (npm)
+## Instalacao (npm)
 
 ```bash
 npm i -g archforgejs
@@ -49,16 +31,16 @@ npm i -g archforgejs
 
 O comando instalado continua sendo `archforge`.
 
-## Instalação (desenvolvimento local)
+## Instalacao local (desenvolvimento)
 
 ```bash
 npm run build
 npm link
 ```
 
-Depois disso, o comando `archforge` fica disponível globalmente.
+Depois disso, o comando `archforge` fica disponivel globalmente.
 
-## Uso rápido
+## Uso rapido
 
 ```bash
 archforge init
@@ -81,6 +63,11 @@ archforge init --save-context
 - `clean-api`: Express + Clean + Postgres + TypeORM + Docker
 - `clean-no-db`: Express + Clean sem banco
 
-## Licença
+## Requisitos
+
+- Node 24 LTS
+- npm
+
+## Licenca
 
 MIT

@@ -1,43 +1,27 @@
 # Archforge
 
-CLI for automated backend creation driven by technical decisions.
+CLI for automated backend creation driven by technical and architectural decisions.
 
-Language: [Português](README.md) | [English](README.en.md)
+Language: [Portugues](https://github.com/Nanndo9/archforge/blob/main/README.md) | [English](https://github.com/Nanndo9/archforge/blob/main/README.en.md)
 Documentation: [PT-BR](https://github.com/Nanndo9/archforge/blob/main/docs/pt-BR/index.md) | [EN](https://github.com/Nanndo9/archforge/blob/main/docs/en/index.md)
 
 ## Why it exists
 
-It came from a dissatisfaction: every new project meant rebuilding the entire
-setup from scratch. That wasted time and energy that should go to what matters.
-Archforge automates this stage so you can focus on product and domain rules.
+It came from a real frustration: every new project meant rebuilding the entire setup. That drains time and energy that should go to the product and domain rules.
 
-Most generators treat architecture as a byproduct of the framework. Archforge
-was created to do the opposite: turn explicit decisions (backend, architecture,
-database, ORM, Docker, tests) into a coherent project from the first commit.
+Archforge automates the starting stage and turns explicit decisions (backend, architecture, database, ORM, Docker, tests) into a coherent project from the first commit.
 
-Architecture is not only folder structure. It is about boundaries, dependencies,
-and domain rules. Archforge accelerates the starting point, but you are still
-responsible for keeping the domain decoupled and consistent.
+Architecture is not just folder structure. It is about boundaries, dependencies, and domain rules. Archforge accelerates the starting point, but the domain decoupling and consistency are still your responsibility.
 
 No AI usage: generation is deterministic and template driven.
 
 ## What it delivers today (v0.1)
 
-- Express as the backend (focus on simplicity).
+- Express as the backend (focus on the basics done right).
 - Clean Architecture as the baseline.
 - Postgres + TypeORM, or no database.
-- Optional Docker (and Postgres in Docker when selected).
+- Optional Docker (includes Postgres when a database is selected).
 - Optional tests (Vitest or none).
-
-## Documentation
-
-- PT-BR: `docs/pt-BR/index.md`
-- EN: `docs/en/index.md`
-
-## Requirements
-
-- Node 24 LTS
-- npm
 
 ## Install (npm)
 
@@ -47,7 +31,7 @@ npm i -g archforgejs
 
 The installed command is still `archforge`.
 
-## Install (local development)
+## Local development install
 
 ```bash
 npm run build
@@ -78,6 +62,11 @@ archforge init --save-context
 
 - `clean-api`: Express + Clean + Postgres + TypeORM + Docker
 - `clean-no-db`: Express + Clean without database
+
+## Requirements
+
+- Node 24 LTS
+- npm
 
 ## License
 
